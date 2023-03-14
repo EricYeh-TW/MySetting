@@ -1,0 +1,155 @@
+{
+  "workbench.iconTheme": "material-icon-theme", // 視窗 ICON 樣式
+  "workbench.editor.enablePreview": true, // 左邊檔案是否點一下是預覽，兩下是打開檔案
+
+  // 編輯區
+  "editor.fontSize": 18,
+  "editor.linkedEditing": true, // HTML tag 頭尾修改其一會一起被修改
+  "editor.fontLigatures": true, // 連字符
+  "diffEditor.wordWrap": "off", // 自動換行
+  "editor.renderWhitespace": "selection", // 空白原點顯示
+  "editor.minimap.enabled": false, // 視窗小地圖
+  "editor.tabSize": 2,
+  "editor.cursorSurroundingLines": 5, // scroll off
+  "window.zoomLevel": -1,
+  "window.titleBarStyle": "custom", // 標題列外觀
+  "files.eol": "auto", // \n: LF | \r\n: CRLF | auto: Uses operating system specific end of line character.
+
+  // 終端機
+  "terminal.integrated.fontSize": 18, // 終端機字大小
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // 默認開啟的終端機
+
+  // Emmet
+  "emmet.triggerExpansionOnTab": true, // 在JS可以使用Emmet 包括Template literals(``)
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact" // emmet 開啟的語言
+  },
+  "emmet.extensionsPath": ["C:\\Users\\user\\AppData\\Roaming\\Code\\User\\snippets"], // snippet 檔案路徑
+
+  // LiveServer
+  "liveServer.settings.port": 8080, // 默認本地 PORT 8080
+  "liveServer.settings.donotShowInfoMsg": true, // 不用跳出 LiveServer 通知
+  "cSpell.language": "en,en-GB",
+
+  // LiveSassCompiler
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"], // 協助編譯兼容瀏覽器
+  "liveSassCompile.settings.generateMap": false, // 不產生 .css.map
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", // 是否壓縮 compressed 壓縮 / expanded 不壓縮
+      "extensionName": ".css", // 檔名後綴 .min.css 壓縮 / .css 不壓縮
+      "savePath": null // 編譯後檔案位置 null 與 scss 檔案同位置
+    }
+  ],
+
+  // Prettier
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true, // 單引號
+  "prettier.semi": true, // 分號
+  "prettier.printWidth": 120, // 每段字元限制
+  "prettier.trailingComma": "all", // 尾綴逗號
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true, // 存檔自動修正排版
+  "[html, javascript, css, scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 特定語言設定
+  },
+
+  // NativeBracketPairColor
+  "editor.guides.bracketPairs": "active", // 括號範圍標示線
+  "editor.bracketPairColorization.enabled": true, // 開啟原生括號顏色
+  "workbench.colorCustomizations": {
+    // 顏色 最多五組
+    "editorBracketHighlight.foreground1": "#ffd900",
+    "editorBracketHighlight.foreground2": "#f200ff",
+    "editorBracketHighlight.foreground3": "#00ff2a"
+  },
+
+  // vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // exit insert mode
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // exit insert mode
+    // 用jk會出問題
+    {
+      "before": [" ", " "],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // cancel search highlight
+    {
+      "before": [" ", "n"],
+      "commands": [":nohl"],
+      "silent": true
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    // easymotion search shortcut
+    {
+      "before": [" ", "s"],
+      "after": ["leader", "leader", "s"]
+    },
+    // enter insert new line
+    {
+      "before": ["<Enter>"],
+      "commands": ["editor.action.insertLineAfter"]
+    },
+    // center viewport
+    {
+      "before": ["`"],
+      "after": ["z", "z"]
+    },
+    // go to line start without blank
+    {
+      "before": [" ", "h"],
+      "after": ["^"]
+    },
+    // go to line end
+    {
+      "before": [" ", "l"],
+      "after": ["$"]
+    }
+  ],
+  // disable some shortcut from vim
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-d>": false,
+    // copy paste
+    "<C-c>": false,
+    "<C-v>": false,
+    // for sqltools plugin
+    "<C-e>": false
+  },
+
+  // sqlTools
+  "sqltools.results.reuseTabs": "connection",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Local instance MySQL",
+      "username": "root",
+      "database": "EXAMPLE"
+    }
+  ]
+}

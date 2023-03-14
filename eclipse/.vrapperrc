@@ -1,0 +1,59 @@
+" key mapping
+nnoremap <space>n :nohlsearch<CR>
+nnoremap <space>h ^
+nnoremap <space>l $
+nnoremap <space>o O<esc>O
+nnoremap <space>p o<esc>p
+nnoremap <space>; <S-a>;<esc>
+nnoremap <tab> >>
+nnoremap <S-tab> <<
+nnoremap <space>y ^v$hy
+nnoremap <space>d ^v$hd
+nnoremap <enter> o<esc>
+nnoremap `` za
+nnoremap p P
+
+
+vnoremap <space><space> <esc>
+vnoremap <space>h ^
+vnoremap <space>l $
+vnoremap <tab> >
+vnoremap <S-tab> <
+vnoremap `` za
+
+inoremap jk <esc> 
+inoremap <space>; <esc><S-a>;
+
+" sneak plugin
+nmap <space>s <Plug>(sneak_s)
+nmap <space>S <Plug>(sneak_S)
+nmap <space>f <Plug>(sneak_f)
+nmap <space>F <Plug>(sneak_F)
+nmap ; <Plug>(sneak-next)
+nmap , <Plug>(sneak-prev)
+
+vmap <space>s <Plug>(sneak_s)
+vmap <space>S <Plug>(sneak_S)
+vmap <space>f <Plug>(sneak_f)
+vmap <space>F <Plug>(sneak_F)
+vmap ; <Plug>(sneak-next)
+vmap , <Plug>(sneak-prev)
+
+" clipboard
+set clipboard=unnamed
+
+" search
+set incsearch
+set ignorecase
+set hlsearch
+set smartcase
+set showmatch
+
+" editor
+set scrolloff=5
+
+" space
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
