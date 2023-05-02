@@ -1,0 +1,41 @@
+" key mapping
+let mapleader=" "
+nnoremap <Leader>n :nohlsearch<CR>
+nnoremap <Leader>h ^
+nnoremap <Leader>l $
+nnoremap <Leader>o O<esc>O
+nnoremap <Leader>p o<esc>p
+nnoremap <Leader>; <S-a>;<esc>
+nnoremap <tab> >>
+nnoremap <S-tab> <<
+nnoremap <Leader>y ^v$hy
+nnoremap <Leader>d ^v$hd
+nnoremap <enter> o<esc>
+nnoremap `` za
+nnoremap p P
+nnoremap vv viw
+nnoremap cc ciw
+nnoremap v9 vi(
+nnoremap c9 ci(
+
+vnoremap <Leader><Leader> <esc> 
+vnoremap <Leader>h ^
+vnoremap <Leader>l $
+vnoremap <tab> >
+vnoremap <S-tab> <
+vnoremap `` za
+
+inoremap jk <esc> 
+
+" clipboard
+set clipboard=unnamed
+
+" search
+set incsearch
+set ignorecase
+set hlsearch
+set smartcase
+set showmatch
+
+" editor
+set scrolloff=5

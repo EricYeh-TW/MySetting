@@ -27,15 +27,15 @@ inoremap <space>; <esc><S-a>;
 " sneak plugin
 nmap <space>s <Plug>(sneak_s)
 nmap <space>S <Plug>(sneak_S)
-nmap <space>f <Plug>(sneak_f)
-nmap <space>F <Plug>(sneak_F)
+nmap f <Plug>(sneak_f)
+nmap F <Plug>(sneak_F)
 nmap ; <Plug>(sneak-next)
 nmap , <Plug>(sneak-prev)
 
 vmap <space>s <Plug>(sneak_s)
 vmap <space>S <Plug>(sneak_S)
-vmap <space>f <Plug>(sneak_f)
-vmap <space>F <Plug>(sneak_F)
+vmap f <Plug>(sneak_f)
+vmap F <Plug>(sneak_F)
 vmap ; <Plug>(sneak-next)
 vmap , <Plug>(sneak-prev)
 
