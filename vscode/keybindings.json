@@ -3,5 +3,24 @@
   {
     "key": "ctrl+shift+a",
     "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-extension.vim_cmd+alt+up",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-extension.vim_cmd+alt+down",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-extension.vim_ctrl+n",
+    "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
   }
 ]

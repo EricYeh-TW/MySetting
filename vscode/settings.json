@@ -1,17 +1,17 @@
 {
+  "window.zoomLevel": -1,
   "workbench.iconTheme": "material-icon-theme", // 視窗 ICON 樣式
   "workbench.editor.enablePreview": true, // 左邊檔案是否點一下是預覽，兩下是打開檔案
 
   // 編輯區
-  "editor.fontSize": 18,
-  "editor.linkedEditing": true, // HTML tag 頭尾修改其一會一起被修改
+  "editor.fontSize": 16,
+  "editor.linkedEditing": false, // HTML tag 頭尾修改其一會一起被修改
   "editor.fontLigatures": true, // 連字符
   "diffEditor.wordWrap": "off", // 自動換行
   "editor.renderWhitespace": "selection", // 空白原點顯示
   "editor.minimap.enabled": false, // 視窗小地圖
   "editor.tabSize": 2,
-  "editor.cursorSurroundingLines": 5, // scroll off
-  "window.zoomLevel": -1,
+  "editor.cursorSurroundingLines": 5,
   "window.titleBarStyle": "custom", // 標題列外觀
   "files.eol": "auto", // \n: LF | \r\n: CRLF | auto: Uses operating system specific end of line character.
 
@@ -29,10 +29,9 @@
   // LiveServer
   "liveServer.settings.port": 8080, // 默認本地 PORT 8080
   "liveServer.settings.donotShowInfoMsg": true, // 不用跳出 LiveServer 通知
-  "cSpell.language": "en,en-GB",
 
   // LiveSassCompiler
-  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"], // 協助編譯兼容瀏覽器
+  // "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"], // 協助編譯兼容瀏覽器
   "liveSassCompile.settings.generateMap": false, // 不產生 .css.map
   "liveSassCompile.settings.formats": [
     {
@@ -47,7 +46,7 @@
   "prettier.singleQuote": true, // 單引號
   "prettier.semi": true, // 分號
   "prettier.printWidth": 120, // 每段字元限制
-  "prettier.trailingComma": "all", // 尾綴逗號
+  "prettier.trailingComma": "none", // 尾綴逗號
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true, // 存檔自動修正排版
   "[html, javascript, css, scss]": {
@@ -108,11 +107,6 @@
       "before": ["<Enter>"],
       "commands": ["editor.action.insertLineAfter"]
     },
-    // center viewport
-    {
-      "before": ["`"],
-      "after": ["z", "z"]
-    },
     // go to line start without blank
     {
       "before": [" ", "h"],
@@ -122,8 +116,21 @@
     {
       "before": [" ", "l"],
       "after": ["$"]
+    },
+    {
+      "before": ["v", "v"],
+      "after": ["v", "i", "w"]
+    },
+    {
+      "before": ["c", "c"],
+      "after": ["c", "i", "w"]
+    },
+    {
+      "before": ["leader", ","],
+      "after": ["T", ">", "v", "t", "<"]
     }
   ],
+
   // disable some shortcut from vim
   "vim.handleKeys": {
     "<C-a>": false,
@@ -133,7 +140,9 @@
     "<C-c>": false,
     "<C-v>": false,
     // for sqltools plugin
-    "<C-e>": false
+    "<C-e>": false,
+    // for toggle sidebar hidden
+    "<C-b>": false
   },
 
   // sqlTools
@@ -151,5 +160,26 @@
       "username": "root",
       "database": "EXAMPLE"
     }
-  ]
+  ],
+
+  //background
+  "background.enabled": false,
+  "background.loop": false,
+  "background.useDefault": false,
+  "background.useFront": false,
+  "background.style": {
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute",
+    "z-index": "99999",
+    "left": 0,
+    "top": 0,
+    "background-size": "100% auto",
+    "background-repeat": "no-repeat",
+    "background-position": "center",
+    "opacity": 0.3
+  },
+  "background.customImages": ["file:///C:/Users/Tibame_T14/Pictures/Saved Pictures/105466007_p0.png"],
+  "workbench.colorTheme": "Default Dark+",
+  "redhat.telemetry.enabled": true
 }

@@ -1,3 +1,8 @@
+" plugin
+Plug '<plugin-github-reference>'
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+
 " key mapping
 let mapleader=" "
 nnoremap <Leader>n :nohlsearch<CR>
@@ -17,6 +22,7 @@ nnoremap vv viw
 nnoremap cc ciw
 nnoremap v9 vi(
 nnoremap c9 ci(
+nnoremap <space>, T>vt<
 
 vnoremap <Leader><Leader> <esc> 
 vnoremap <Leader>h ^
@@ -26,6 +32,7 @@ vnoremap <S-tab> <
 vnoremap `` za
 
 inoremap jk <esc> 
+
 
 " clipboard
 set clipboard=unnamed

@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 " key mapping

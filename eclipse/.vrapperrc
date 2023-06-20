@@ -12,6 +12,11 @@ nnoremap <space>d ^v$hd
 nnoremap <enter> o<esc>
 nnoremap `` za
 nnoremap p P
+nnoremap vv viw
+nnoremap cc ciw
+nnoremap v9 vi(
+nnoremap c9 ci(
+nnoremap <space>, T>vt<
 
 
 vnoremap <space><space> <esc>
